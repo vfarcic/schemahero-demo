@@ -1,0 +1,18 @@
+apiVersion: schemas.schemahero.io/v1alpha4
+kind: Table
+metadata:
+  name: devopstoolkit-videos
+spec:
+  database: devopstoolkit
+  name: videos
+  schema:
+    postgres:
+      primaryKey:
+      - id
+      columns:
+      - name: id
+        type: varchar(12)
+      - name: title
+        type: text
+        constraints:
+          notNull: true
