@@ -1,0 +1,10 @@
+apiVersion: databases.schemahero.io/v1alpha4
+kind: Database
+metadata:
+  name: devopstoolkit
+spec:
+  immediateDeploy: true
+  connection:
+    postgres:
+      uri:
+        value: postgres://postgres:password@postgresql:5432/devopstoolkit
